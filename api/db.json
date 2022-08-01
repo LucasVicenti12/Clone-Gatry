@@ -1,0 +1,148 @@
+{
+  "promotions": [
+    {
+      "id": 1,
+      "title": "Kit Notebook Acer Aspire 3 + Mochila Green, A315-41-R790, AMD Ryzen 3 2200U Dual Core",
+      "price": 1799,
+      "url": "",
+      "imageUrl": "https://m.media-amazon.com/images/I/61o0lt6Sh6L._AC_SL1000_.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Faqueiro Tramontina Laguna Inox - 100 Peças",
+      "price": 246.05,
+      "url": "",
+      "imageUrl": "https://cdn.gatry.com/gatry-static/promocao/imagem/0324bf9ad81ccbc5a8e22a1a41015649.png"
+    },
+    {
+      "id": 3,
+      "title": "Tênis West Coast Marrom",
+      "price": 119.99,
+      "url": "",
+      "imageUrl": "https://cdn.gatry.com/gatry-static/promocao/imagem/fe0a1e4ddcbd8f9a99a05908b6d29ea2.png"
+    },
+    {
+      "id": 4,
+      "title": "Fone de Ouvido Jaybird Run XT Sport Bluetooth, Cinza",
+      "price": 699.9,
+      "url": "",
+      "imageUrl": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR28wgXNQR1Fh7MzrNPAMPiAdyy5PVLHkJ780F_FYhzod-QcLiNc41meJ65U0NyAD-c_-2TszxDM6XJ-QRrY0dzXATpXS4H"
+    },
+    {
+      "title": "SS Pets AM244 Almofada Pet 45x45cm Gato",
+      "url": "https://amzn.to/2SQim8Y",
+      "imageUrl": "https://m.media-amazon.com/images/I/A1fIp40wAPL._AC_SX679_.jpg",
+      "price": "25",
+      "id": 5
+    },
+    {
+      "title": "IPhone 11 (128 GB) - Preto",
+      "url": "https://www.mercadolivre.com.br/apple-iphone-11-128-gb-preto/p/MLB15149567?pdp_filters=category:MLB1055#searchVariation=MLB15149567&position=1&search_layout=stack&type=product&tracking_id=655e5f19-e300-4a0c-8f6f-3bee4056866d",
+      "imageURl": "",
+      "price": "3499",
+      "imageUrl": "https://a-static.mlcdn.com.br/1500x1500/iphone-11-apple-128gb-preto-61-12mp-ios/magazineluiza/155611100/1cd49b14dc8d5d36c597d5d964fc4c73.jpg",
+      "id": 6
+    },
+    {
+      "title": "PLACA DE VIDEO GIGABYTE GEFORCE RTX 3090 TI GAMING, 24GB, GDDR6X, 384-BIT, GV-N309TGAMING-24GD",
+      "url": "https://www.pichau.com.br/placa-de-video-gigabyte-geforce-rtx-3090-ti-gaming-24gb-gddr6x-384-bit-gv-n309tgaming-24gd?gclid=Cj0KCQjw852XBhC6ARIsAJsFPN1AmlWdIjpi_6nf64poVqCpWb4udIQOHOT9Lnzqwd96nbp84tQKEvIaAj3xEALw_wcB",
+      "imageURl": "",
+      "price": "14399",
+      "imageUrl": "https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/g/v/gv-n309tgaming-24gd3.jpg",
+      "id": 7
+    },
+    {
+      "title": "SOUNDBAR GAMER FORTREK G PARA PC BLACK HAWK 6W RGB, 73400",
+      "url": "https://www.pichau.com.br/soundbar-gamer-fortrek-g-para-pc-black-hawk-6w-rgb-73400",
+      "imageUrl": "https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/7/3/73400.jpg",
+      "price": "119",
+      "id": 8
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Phillip Jacobs",
+      "avatarUrl": "https://randomuser.me/api/portraits/men/64.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Todd Mitchell",
+      "avatarUrl": "https://randomuser.me/api/portraits/men/16.jpg"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "comment": "TELA HD",
+      "promotionId": 1,
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "comment": "de R$ 599,90 \n por R$246,05à vista \n (5% de desconto) \n ou R$ 259,00 em 5x de R$ 51,80 sem juros",
+      "promotionId": 2,
+      "userId": 2
+    },
+    {
+      "userId": 1,
+      "promotionId": 1,
+      "comment": "Hey ho",
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "promotionId": 1,
+      "comment": "Test",
+      "parentId": 3,
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "promotionId": 1,
+      "comment": "sub resposta",
+      "parentId": 4,
+      "id": 5
+    },
+    {
+      "userId": 1,
+      "promotionId": 1,
+      "comment": "resposta tela hd",
+      "parentId": 1,
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "promotionId": 2,
+      "comment": "resposta",
+      "parentId": 2,
+      "id": 7
+    },
+    {
+      "userId": 1,
+      "promotionId": 2,
+      "comment": "nova resposta",
+      "parentId": 2,
+      "id": 8
+    },
+    {
+      "userId": 1,
+      "promotionId": 2,
+      "comment": "test",
+      "parentId": 7,
+      "id": 9
+    },
+    {
+      "userId": 1,
+      "promotionId": 2,
+      "comment": "test",
+      "id": 10
+    },
+    {
+      "userId": 1,
+      "promotionId": 2,
+      "comment": "test",
+      "id": 11
+    }
+  ]
+}
