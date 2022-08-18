@@ -1,22 +1,23 @@
 import React, {useEffect, useState} from "react";
-import PromotionCard from "../../../components/Promotion/Card/Card";
-import axios from "axios";
+import useApi from "../../Utils/useApi";
 import {Link} from 'react-router-dom';
 import "./Search.css"
 import PromotionList from "../List/List";
 
 const PromotionSearch = () => {
-    const [promotions, setPromotions] = useState([])
-    const [search, setSearch] = useState('')
-// requisição
-  useEffect(() => {
-    const params = {};
-    if (search){
-        params.title_like = search;
-    }
-    axios.get('http://localhost:5000/promotions?_embed=comments&_order=desc&_sort=id', {params}).then((response) => {
-      setPromotions(response.data)
+    const [search, setSearch] = useState('');
+    const [load, loadinfo] = useApi({
+      url: '/promotions',
+      method: 'get',
+      params: {
+        _embed: 'comments',
+        _order: 'desc',
+        _sort: 'id',
+        title_like: search || undefined,
+      }
     });
+  useEffect(() => {
+    load()
   }, [search]);
 
   return (
@@ -33,7 +34,7 @@ const PromotionSearch = () => {
             value={search}
             onChange={(ev) => setSearch(ev.target.value)}
         />
-        <PromotionList promotions={promotions} loading={!promotions.length} />
+        <PromotionList promotions={loadinfo.data} loading={loadinfo.loading} error={loadinfo.error}/>
     </div>
   )
 }

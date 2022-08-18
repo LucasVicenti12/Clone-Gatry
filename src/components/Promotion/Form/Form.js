@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Form.css";
 import axios from 'axios';
 import {useNavigate} from "react-router-dom";
+import useApi from "../../Utils/useApi";
 
 const initialValue = {
     title: '',
@@ -13,15 +14,30 @@ const initialValue = {
 const Form = ({id}) => {
     const [values, setValues] = useState(initialValue)
     const navigate = useNavigate();
+    const [load] = useApi({
+        url: `/promotions/${id}`,
+        methos: 'get',
+        onCompleted: (response) => {
+            setValues(response.data);
+        }
+    })
+
+    const [save, saveInfo] = useApi({
+        url: id
+        ? `/promotions/${id}` : '/promotions',
+        method: id ? 'put' : 'post',
+        onCompleted: (response)  => {
+            if(!response.error){
+                navigate('/');
+            }
+        }
+    })
 
     useEffect(() => {
         if (id){
-            axios.get(`http://localhost:5000/promotions/${id}`)
-            .then((response) => {
-                setValues(response.data);
-            })
+            load();
         }
-    }, []);
+    }, [id]);
 
     function onChange(ev){
         const {name, value} = ev.target;
@@ -30,15 +46,8 @@ const Form = ({id}) => {
 
     function onSubmit(ev){
         ev.preventDefault();
-
-        const method = id ? 'put' : 'post';
-        const url = id
-            ? `http://localhost:5000/promotions/${id}`
-            : 'http://localhost:5000/promotions'
-
-        axios[method](url, values)
-        .then((response) => {
-            navigate('/')
+        save({
+            data: values
         });
     }
     
@@ -47,6 +56,7 @@ const Form = ({id}) => {
             <h1>Promo Show</h1>
             <h2>Nova Promoção</h2>
             <form onSubmit={onSubmit}>
+                {saveInfo.loading && <span>Salvando dados...</span>}
                 <div className="promotion-form_group">
                     <label htmlFor="title">Título</label>
                     <input id="title" name="title" type="text" onChange={onChange} value={values.title}/>
