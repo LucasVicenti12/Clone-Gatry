@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./Form.css";
-import axios from 'axios';
 import {useNavigate} from "react-router-dom";
 import useApi from "../../Utils/useApi";
 
@@ -37,6 +36,7 @@ const Form = ({id}) => {
         if (id){
             load();
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [id]);
 
     function onChange(ev){
