@@ -1,4 +1,4 @@
-# Estudos-ReactJS
+# Estudos-ReactJS-Clone Gatry
 
 <h2>ESTE DOCUMENTO SERVE APENAS PARA ESTUDO</H2>
 <br/>
