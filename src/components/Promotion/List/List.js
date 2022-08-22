@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "./List.css";
 import PromotionCard from "../../../components/Promotion/Card/Card";
+import PromotionModal from "../Modal/Modal";
 
 const PromotionList = ({loading, promotions, error}) => {
+    const [promotionId, setPromotionId] = useState(null);
     if (loading || !promotions){
         return <div>Carregando...</div>
     }
@@ -16,8 +18,12 @@ const PromotionList = ({loading, promotions, error}) => {
     return (
         <div className="promotion-list">
            {promotions.map((promotion) => (
-                <PromotionCard promotion={promotion}/>
+                <PromotionCard promotion={promotion} onClickComments={() => setPromotionId(promotion.id)}/>
             ))}
+            {
+                promotionId &&(
+                <PromotionModal promotionId={promotionId} onClickClose={() => setPromotionId(null)} />)
+            }
         </div>
     )
 }

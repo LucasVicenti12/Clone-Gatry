@@ -114,14 +114,14 @@
     {
       "userId": 1,
       "promotionId": 2,
-      "comment": "resposta",
+      "comment": "resposta, nova lavadoura eletrolux brasthemp semptoshiba compre agora por favor!",
       "parentId": 2,
       "id": 7
     },
     {
       "userId": 1,
       "promotionId": 2,
-      "comment": "nova resposta",
+      "comment": "nova resposta, nova lavadoura eletrolux brasthemp semptoshiba compre agora por favor!",
       "parentId": 2,
       "id": 8
     },
@@ -143,6 +143,24 @@
       "promotionId": 2,
       "comment": "test",
       "id": 11
+    },
+    {
+      "userId": 1,
+      "promotionId": 2,
+      "comment": "Meu novo test",
+      "id": 12
+    },
+    {
+      "userId": 1,
+      "promotionId": 1,
+      "comment": "Mais Teste",
+      "id": 13
+    },
+    {
+      "userId": 1,
+      "promotionId": 1,
+      "comment": "Teste 3",
+      "id": 14
     }
   ]
 }

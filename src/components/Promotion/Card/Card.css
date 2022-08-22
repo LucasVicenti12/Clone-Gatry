@@ -10,6 +10,9 @@
     max-width: 100px;
     margin-right: 20px;
 }
+.promotion-card_info{
+    flex-grow: 1;
+}
 .promotion-card_title{
     font-size: 16px;
     color: #2c3c3c;
@@ -22,6 +25,10 @@
     color: #95a5a6;
     font-size: 16px;
     font-weight: bold;
+    max-width: 345px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .promotion-card_footer{
     display: flex;
@@ -31,6 +38,9 @@
     margin-left: auto;
     margin-right: 20px;
     color: #3498db;
+    background-color: unset;
+    border: unset;
+    white-space: nowrap;
 }
 .promotion-card_link{
     text-decoration: none;
@@ -38,4 +48,14 @@
     border: 1px solid  #3498db;
     border-radius: 4px;
     padding: 8px 10px;
+    white-space: nowrap;
+}
+.promotion-card_edit{
+    text-decoration: none;
+    color:  #3498db;
+    border: 1px solid  #3498db;
+    border-radius: 4px;
+    padding: 8px 10px;
+    margin-left: 10px;
+    white-space: nowrap;
 }
