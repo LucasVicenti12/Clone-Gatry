@@ -161,6 +161,80 @@
       "promotionId": 1,
       "comment": "Teste 3",
       "id": 14
+    },
+    {
+      "userId": 1,
+      "promotionId": 6,
+      "comment": "Esse é bom",
+      "id": 15
+    },
+    {
+      "userId": 1,
+      "promotionId": 6,
+      "comment": "vdd eu concordo",
+      "parentId": 15,
+      "id": 16
+    },
+    {
+      "userId": 1,
+      "promotionId": 6,
+      "comment": "cala a boca",
+      "parentId": 16,
+      "id": 17
+    },
+    {
+      "userId": 1,
+      "promotionId": 6,
+      "comment": "quanta gente grossa aqui ein",
+      "parentId": 15,
+      "id": 18
+    },
+    {
+      "userId": 1,
+      "promotionId": 6,
+      "comment": "vdd",
+      "parentId": 18,
+      "id": 19
+    },
+    {
+      "userId": 1,
+      "promotionId": 2,
+      "comment": "É bom",
+      "id": 20
+    },
+    {
+      "userId": 1,
+      "promotionId": 2,
+      "comment": "Né",
+      "id": 21
+    },
+    {
+      "userId": 1,
+      "promotionId": 6,
+      "comment": "cala vc",
+      "parentId": 17,
+      "id": 22
+    },
+    {
+      "userId": 1,
+      "promotionId": 6,
+      "comment": "seu noia",
+      "parentId": 17,
+      "id": 23
+    },
+    {
+      "userId": 1,
+      "promotionId": 6,
+      "comment": "quanta falta de educação",
+      "parentId": 22,
+      "id": 24
+    },
+    {
+      "userId": 1,
+      "promotionId": 6,
+      "comment": "também concordo",
+      "parentId": 16,
+      "id": 25
     }
   ]
 }
